@@ -9,9 +9,17 @@
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+}
+
+/*******************************************************************
+*****************************  HEADER  *****************************
+********************************************************************/
+
 .bg-supreme {
   height: 100vh;
-  background: url(../img/supreme-bg-1.jpg) center/cover;
+  background: url(../img/supreme-bg-1.jpg) center/cover fixed;
 }
 
 .bg-supreme h1 {
@@ -25,4 +33,82 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+/*******************************************************************
+*****************************  BLOC-CONTAINER  **********************
+********************************************************************/
+
+.bloc-container {
+  background: #fffaee;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.container {
+  display: flex;
+}
+
+.img-cont {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.img-cont img {
+  height: 700px;
+}
+
+.img-cont img:hover {
+  filter: blur(2px);
+  border: 0px;
+  transition: 0.5s;
+}
+
+.p-cont {
+  width: 20%;
+  font-family: "font-1";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+
+.p-cont p {
+  width: 70%;
+  text-align: justify;
+}
+
+/*******************************************************************
+*****************************  FOOTER  ****************************
+********************************************************************/
+
+.home {
+  background: #fffaee;
+  display: flex;
+  height: 10vh;
+  align-items: center;
+}
+
+.home a {
+  color: #4d4d4d;
+  font-family: "font-1";
+  font-size: 2rem;
+  text-align: end;
+  margin: 0 auto;
+}
+
+.home a:hover {
+  color: #4d4d4d10;
 }
