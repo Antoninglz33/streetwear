@@ -1,0 +1,186 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../font/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: "font-1";
+}
+
+a {
+  text-decoration: none;
+}
+/************************************************************************
+**************************BLOC-1*******************************************
+**************************************************************************/
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.bloc-l {
+  width: 50%;
+  display: flex;
+  background: #fff6e8;
+}
+.left {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.left h1 {
+  text-align: start;
+  width: 80%;
+  color: #4d4d4d;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 3rem;
+  padding-bottom: 10px;
+}
+.left img {
+  height: 700px;
+}
+
+.left img:hover {
+  filter: blur(2px);
+  border: 0px;
+  transition: 0.5s;
+}
+
+.rigth {
+  display: flex;
+  justify-content: flex-end;
+  writing-mode: vertical-rl;
+  padding-left: 10px;
+  padding-bottom: 10%;
+}
+
+.rigth ul {
+  display: flex;
+}
+
+.rigth a {
+  padding: 10px;
+  color: #4d4d4d;
+  font-size: 1.4rem;
+}
+
+.rigth a:hover {
+  background: #4d4d4d;
+  color: #fff6e8;
+  transition: 0.6s;
+}
+/************************************************************************
+**************************BLOC-2*******************************************
+**************************************************************************/
+
+.bloc-r {
+  width: 50%;
+  background-image: url(../img/bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/************************************************************************
+**************************  RESPONSIVE  *************************************
+**************************************************************************/
+
+@media screen and (max-width: 1300px) {
+  .left img {
+    height: 600px;
+  }
+  .rigth ul {
+    padding-bottom: 68px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .bloc-r {
+    display: none;
+  }
+  .bloc-l {
+    width: 100%;
+  }
+  .left img {
+    height: 700px;
+  }
+  .left h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .rigth ul {
+    padding-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .bloc-l {
+    display: block;
+  }
+  .rigth {
+    writing-mode: horizontal-tb;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  .left {
+    width: 100%;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .left h1 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .left img {
+    height: 600px;
+  }
+  .left {
+    margin-top: 100px;
+  }
+  .left h1 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 450px) {
+  .left img {
+    height: 500px;
+    margin-top: 20px;
+  }
+  .left {
+    margin-top: 150px;
+  }
+  .left h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  .left img {
+    height: 400px;
+    margin-top: 20px;
+  }
+  .left {
+    margin-top: 140px;
+  }
+  .left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .rigth ul {
+    margin-top: 20px;
+    margin-right: 70px;
+  }
+  .rigth a {
+    font-size: 1.2rem;
+  }
+}
